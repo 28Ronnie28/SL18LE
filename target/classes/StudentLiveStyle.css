@@ -1,0 +1,494 @@
+@font-face {
+    src: url("ProximaNova.ttf");
+}
+
+@font-face {
+    src: url("Penultimate.ttf");
+}
+
+@font-face {
+    src: url("ArchitectsDaughter.ttf");
+}
+
+@font-face {
+    src: url("PlayfairDisplay.ttf");
+}
+
+@font-face {
+    src: url("Roboto-Regular.ttf");
+}
+
+.root {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 16px;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.button, .text-field, .password-field {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 4, 4);
+}
+
+.hyperlink {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 2, 2);
+    -fx-font-size: 11pt;
+}
+
+.button:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 5, 0, 4, 4);
+}
+
+.button:pressed {
+    -fx-scale-x: 0.99;
+    -fx-scale-y: 0.99;
+    -fx-scale-z: 0.99;
+}
+
+/*Custom classes*/
+.settingsButton {
+    -fx-background-color: #585858;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-min-width: 250;
+    -fx-min-height: 50;
+    -fx-background-insets: 0;
+    -fx-border-width: 1;
+    -fx-border-color: white;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.dialog-button {
+    -fx-background-color: #800000;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-min-width: 100;
+    -fx-min-height: 30;
+    -fx-background-insets: 0;
+    -fx-border-width: 1;
+    -fx-border-color: white;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.settingsButton:hover {
+    -fx-background-color: #262626;
+}
+
+.bulletinBoardScrollPane {
+    -fx-border-color: #800000;
+    -fx-border-width: 20;
+}
+
+.headingPane {
+    -fx-background-size: auto 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: #800000;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 4);
+}
+
+.developerText {
+    -fx-font-size: 12;
+    -fx-text-fill: dimgrey;
+}
+
+.bottomPane {
+    -fx-background-color: #800000;
+}
+
+.daysText {
+    -fx-font-size: 26;
+}
+
+.smallText {
+    -fx-font-size: 12px;
+}
+
+.smallerText {
+    -fx-font-size: 11px;
+}
+
+.largeText {
+    -fx-font-size: 22px;
+}
+
+.noteShadow {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, -5, 5);
+}
+
+.noteHeading {
+    -fx-font-family: "Penultimate";
+    -fx-font-size: 32px;
+}
+
+.noteDescription {
+    -fx-font-family: "Architects Daughter";
+    -fx-font-size: 22px;
+}
+
+/*new display*/
+
+.side-tab {
+    -fx-border-width: 0 5 0 0;
+    -fx-border-color: #660000;
+}
+
+.side-tab-hovered {
+    -fx-background-color: #660000;
+}
+
+.side-tab-text {
+    -fx-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 2, 2);
+}
+
+.tab-header-pane {
+    -fx-background-color: #660000;
+}
+
+.selected-side-tab {
+    -fx-border-color: #ffffff;
+}
+
+.top-pane {
+    -fx-max-height: 50;
+    -fx-min-height: 50;
+    -fx-background-color: #4d0000;
+    -fx-padding: 10;
+    -fx-alignment: center-left;
+    -fx-spacing: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 0, 3);
+}
+
+.top-pane-text {
+    -fx-text-fill: white;
+    -fx-font-size: 18
+}
+
+.background-pane {
+    -fx-background-image: url("Background.jpg");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: rgb(38,38,38);
+    -fx-accent: white;
+}
+
+.login-fields {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -45%);
+    -fx-font-size: 12pt;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#ffffff, #d3d3d3);
+    -fx-background-radius: 20, 20, 20, 20;
+    -fx-background-image: url("User.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: auto 50%;
+    -fx-background-position: 5, 5, 5, 10;
+    -fx-max-width: 250;
+    -fx-min-width: 250;
+    -fx-max-height: 40;
+    -fx-min-height: 40;
+    -fx-padding: 5 5 5 30;
+    -fx-accent: #990000 ;
+}
+
+.login-password {
+    -fx-background-position: 5, 5, 5, 15;
+    -fx-background-image: url("Password.png");
+}
+
+.login-button {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: #800000;
+    -fx-background-radius: 20, 20, 20, 20;
+    -fx-max-width: 250;
+    -fx-min-width: 250;
+    -fx-max-height: 40;
+    -fx-min-height: 40;
+    -fx-padding: 2;
+    -jfx-button-type: RAISED;
+}
+
+.login-tooltip {
+    -fx-background-color: #990000;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+.heading-text {
+    -fx-font-size: 32pt;
+    -fx-font-weight: bold;
+    -fx-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+.home-icon-image {
+    -fx-background-radius: 5em;
+    -fx-min-width: 120px;
+    -fx-min-height: 120px;
+    -fx-max-width: 120px;
+    -fx-max-height: 120px;
+    -fx-background-color: -fx-body-color;
+    -fx-background-size: auto 100%;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 1em; /* 12 */
+    -fx-text-fill: #828282;
+}
+
+.home-icon-image-class {
+    -fx-background-image: url("ClassIcon.png");
+}
+
+.home-icon-image-timetable {
+    -fx-background-image: url("TimeTableIcon.png");
+}
+
+.home-icon-image-results {
+    -fx-background-image: url("ResultsIcon.png");
+}
+
+.home-icon-image-noticeboard {
+    -fx-background-image: url("NoticeboardIcon.png");
+}
+
+.home-icon-image-contactinfo {
+    -fx-background-image: url("ContactDetailsIcon.png");
+}
+
+.home-icon-image-importantdates {
+    -fx-background-image: url("ImportantDatesIcon.png");
+}
+
+.home-icon-image-attendance {
+    -fx-background-image: url("AttendanceIcon.png");
+}
+
+.home-icon-image-assignments {
+    -fx-background-image: url("AssignmentsIcon.png");
+}
+
+.home-icon-image-cafe{
+    -fx-background-image: url("CafeIcon.png");
+}
+
+.home-icon-image-chatroom{
+    -fx-background-image: url("ChatRoomIcon.png");
+}
+
+.home-icon-image-settings {
+    -fx-background-image: url("SettingsIcon.png");
+}
+
+.home-icon-image:focused {
+    -fx-border-color: transparent, black;
+    -fx-border-width: 1, 1;
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.home-icon-image:pressed {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+.home-text {
+    -fx-font-size: 20pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.class-heading-text {
+    -fx-font-size: 28pt;
+    -fx-font-weight: bold;
+    -fx-fill: white;
+    -fx-background-color: linear-gradient(#ffffff, #d3d3d3);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+.class-select-combo-box {
+    -fx-background-color: transparent;
+    -fx-font-size: 18;
+    -fx-max-width: 50;
+    -fx-max-height: 50;
+}
+
+.class-button {
+    -fx-background-radius: 20;
+    -fx-border-radius: 15;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-border-width: 2;
+    -fx-background-color: #ffb81c;
+    -fx-border-color: black;
+    -fx-font-weight: bold;
+    -fx-min-width: 200;
+    -fx-min-height: 35;
+}
+
+.files-list-view {
+    -fx-background-color: #660000;
+    -fx-control-inner-background: rgba(66, 135, 167, 0);
+    -fx-background-radius: 15;
+    -fx-background-insets: -10;
+    -fx-border-color: black;
+    -fx-border-radius: 15;
+    -fx-border-insets: -10;
+    -fx-border-width: 2;
+    -fx-font-size: 22;
+    -fx-max-width: 1200;
+    -fx-min-width: 200;
+}
+
+.files-list-view .list-cell .text {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 2, 2);
+}
+
+.files-list-view .list-cell {
+    -fx-text-fill: white;
+}
+
+.files-list-view .list-cell:filled:hover {
+    -fx-background-color: #800000;
+}
+
+.files-list-view .list-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color, -fx-cell-focus-inner-border, -fx-selection-bar;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+.timetable-weekdays .column-header-background {
+    -fx-background-color: #800000;
+}
+
+.file-context-menu {
+    -fx-font-size: 18;
+}
+
+.download-progress-bar {
+    -fx-progress-color: #660000;
+    -fx-max-width: 50;
+    -fx-min-width: 50;
+    -fx-max-height: 30;
+    -fx-min-height: 30;
+}
+
+.percentage-text {
+    -fx-font-size: 14px;
+}
+
+.timetable-pane {
+    -fx-background-color: /*rgba(66, 135, 167, .7)*/ #808080;
+    -fx-border-color: black;
+}
+
+.timetable-text {
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-padding: 5;
+    -fx-wrap-text: true;
+}
+
+.timetable-weekdays {
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-padding: 5;
+}
+
+.noticeboard-pane {
+    -fx-background-image: url("BulletinBoard.jpg");
+    -fx-background-size: 100%;
+}
+
+.result-slide-pane {
+    -fx-background-color: #660000;
+    -fx-alignment: center;
+    -fx-padding: 4;
+}
+
+.result-first-slide-pane {
+    -fx-background-color: #660000;
+    -fx-alignment: center-left;
+    -fx-padding: 4;
+}
+
+.result-heading-slide-pane {
+    -fx-background-insets: 0 -2 0 0;
+}
+
+.result-text {
+    -fx-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 2, 2);
+}
+
+.result-heading-text {
+    -fx-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 28;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 2, 2);
+}
+
+.result-component .result-main-pain {
+    -fx-border-width: 1 0 1 0;
+    -fx-border-color: #660000;
+}
+
+.result-component :hover .result-main-pain {
+    -fx-border-color: #990000;
+}
+
+.result-button {
+    -fx-background-radius: 20;
+    -fx-border-radius: 15;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-border-width: 2;
+    -fx-background-color: #ffb81c;
+    -fx-border-color: black;
+    -fx-font-weight: bold;
+    -fx-min-width: 75;
+    -fx-min-height: 30;
+}
+
+.jfx-hamburger StackPane {
+    -fx-background-color: white;
+}
+
+.custom-dialog-heading {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 22;
+}
+
+.custom-dialog-body {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 16;
+}
+
+.lecturer-text-pane {
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-border-color: black;
+    -fx-border-radius: 15;
+    -fx-border-width: 2;
+    -fx-background-color: #8B0000;
+}
+
+.lecturer-text-pane :hover {
+    -fx-background-color: #990000;
+}
